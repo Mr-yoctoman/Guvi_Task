@@ -1,0 +1,50 @@
+What is HTTP ?
+
+Answer : 
+
+There are 7 layers in the OSI model. OSI is nothing but Open System Interconnection. It is a standard model which is followed by most of all organisations to troubleshoot the problems. Whether the problem occurs in a single system or the problem is of the server down for many people. The problem can be narrowed down to single layer and can be rectified easily. Lot of unnecessary work can be reduced by following the model.
+
+
+HTTP stands for Hyper Text Transfer Protocol is an application layer for transmitting Hypermedia document , such as HTML. It is designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical client - server model with a client opening a connection to make a request, then waiting until it receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data between two requests.
+
+The difference between HTTP1.1 and HTTP2 are as follows :
+
+	1.	Multiplexing:
+	•	HTTP1.1 : Uses a single connection for each request/ response. If multiple resources are needed, they are requested one at a time, in sequence.
+	•	HTTP2 : It supports multiplexing, allowing multiple requests and responses to be sent in parallel over a single connection. This reduces latency and improves performance.
+ 2.  Header Compression :
+	•	HTTP1.1 : Headers are not compressed, and they are sent in plaintext with each request and response.
+	•	HTTP2 : Uses header compression to reduce overhead. This can significantly reduce the amount of data that needs to be transmitted, improving efficiency.
+  3.   Server Push :
+	•	 HTTP1.1 : The server responds to client requests only. The client must request each resource it needs.
+	•	HTTP2 : Introduces server push, allowing the server to push multiple responses to a single client request. This can reduce round-trip times and improve page load times.
+ 4.   Connection Handling : 
+	•	HTTP1.1 : Requires multiple connections for parallelism, leading to increased overhead and latency.
+	•	HTTP2 : Uses single, multiplexed connection, reducing the need for multiple connections and improving efficiency.
+
+
+
+2 . Question : Write a blog about objects and its internal representations in javascript ?
+
+Answer : 
+
+Computers create Models of the world using DATA. Imagine there is an Image of model of mountains at background and there is a model of Hotel near to it and model of cars are parked in model parking lot and model trees , model swimming pool, gym, food are also there in the hotel. 
+	To human, it is clear what kind of real-world object each one represents.
+	A computer has no predefined concept of what a hotel or car is. It does not know what they are used for. My laptop or phone will not have a favourite brand of car, nor will it know what star rating my hotel is. So how do we use computers to create hotel booking apps or video games were players can interact within it? The answer is that programmers , we create a very different kind of model, especially for computers. 
+	We, the programmers make these models using data. Objects are things and it has properties which are nothing but characteristics. 
+	Suppose in HOTEL object, the hotel object uses properties uses property names and values to tell you about this particular hotel, such as the hotel’s name, its rating, the number of rooms it has, and whether it has swimming pool , parking lot, trees and etc., or in other words we can tell whether or not this hotel has certain facilities.
+
+We can create Object using Literal Notation and Constructor Notation.
+
+Using Literal Notation : 
+
+  var Guvi = { name : “Guvi Ltd” , online : true , placement_assitance : true };
+
+Using Constructor Notation :
+
+  var Guvi = new Object();
+  Guvi.name = “Guvi ltd”;
+	Guvi.online = true;
+	Guvi.placement_assistance = true;  
+
+
